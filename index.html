@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/employee.png">
     <link rel="stylesheet" href="./main.css" type="text/css" />    
     <title>Registro Empleados</title>
 </head>
@@ -22,19 +23,19 @@
                 <h2 class="section-container__title">Registro en el Sistema</h2>
                 <form action="#" id="employeeForm">                    
                     <label for="name">Nombre</label><span class="section-container--required">*</span>
-                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <input type="text" required name="name" id="name" placeholder="Nombre">
 
                     <label for="fathersLastName">Apellido Paterno</label><span class="section-container--required">*</span>
-                    <input type="text" name="fathersLastName" id="fathersLastName" placeholder="Apellido Paterno">
+                    <input type="text" required name="fathersLastName" id="fathersLastName" placeholder="Apellido Paterno">
                     
                     <label for="mothersLastName">Apellido Materno</label><span class="section-container--required">*</span>
-                    <input type="text" name="mothersLastName" id="mothersLastName" placeholder="Apellido Materno">
+                    <input type="text" required name="mothersLastName" id="mothersLastName" placeholder="Apellido Materno">
 
                     <label for="birthdate">Fecha de Nacimiento</label><span class="section-container--required">*</span>
-                    <input type="text" name="birthdate" id="birthdate" placeholder="Fecha de Nacimiento">
+                    <input type="date" required name="birthdate" id="birthdate" placeholder="Fecha de Nacimiento">
                     
                     <label for="area">Área</label><span class="section-container--required">*</span>
-                    <input type="text" name="area" id="area" placeholder="Área">
+                    <input type="text" required name="area" id="area" placeholder="Área">
 
                     <input type="submit" value="Enviar">
                 </form>
@@ -58,6 +59,11 @@
             </div>
 
         </section>
+
+        <footer class="attribution">
+            Evaluación técnica por Hábil MX,
+            Codificado por <a href="https://github.com/AndresMtzF" target="_blank" rel="noopener">Andrés Martínez Fts</a>.
+        </fotter>
 
     </main>
 
