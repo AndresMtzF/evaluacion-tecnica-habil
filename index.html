@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css" type="text/css" />    
+    <title>Registro Empleados</title>
+</head>
+<body>
+
+    <main class="main-container">
+
+        <header class="main-container__header">
+            <h1>Registro de Empleados</h1>        
+        </header>
+
+        <section class="section-container">            
+
+            <div class="section-container__form">
+                <h2 class="section-container__title">Registro en el Sistema</h2>
+                <form action="#" id="employeeForm">                    
+                    <label for="name">Nombre</label><span class="section-container--required">*</span>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+
+                    <label for="fathersLastName">Apellido Paterno</label><span class="section-container--required">*</span>
+                    <input type="text" name="fathersLastName" id="fathersLastName" placeholder="Apellido Paterno">
+                    
+                    <label for="mothersLastName">Apellido Materno</label><span class="section-container--required">*</span>
+                    <input type="text" name="mothersLastName" id="mothersLastName" placeholder="Apellido Materno">
+
+                    <label for="birthdate">Fecha de Nacimiento</label><span class="section-container--required">*</span>
+                    <input type="text" name="birthdate" id="birthdate" placeholder="Fecha de Nacimiento">
+                    
+                    <label for="area">Área</label><span class="section-container--required">*</span>
+                    <input type="text" name="area" id="area" placeholder="Área">
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="section-container__employee-table">
+                <h2 class="section-container__title">
+                    Lista de Empleados
+                </h2>
+
+                <table class="employee-table" id="employeeTable">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Area</th>
+                        <th>Acción</th>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+<script src="./main.js"></script>
+</html>
+
+<!-- Crear una tabla (vista) y formulario para registro de empleados que solicite:
+1. nombre
+2. apellido paterno,
+3. apellido materno,
+4. fecha de nacimiento y
+5. área. -->
+
+<!-- El formulario permitirá agregar nuevos registros (en memoria). Cada registro agregado debe mostrarse en una tabla mostrando los 5 campos y deberá permitir quitar o eliminar un registro en particular desde el listado de empleados (tabla)
+Puedes ocupar estilos CSS para poder darle mejor presentación y distribución de los elementos.
+Puedes hacer uso de manipulación del DOM o alguna librería o framework
+La información queda en memoria. -->
