@@ -86,7 +86,9 @@ function deleteEmployeeObj(idEmployee){
 }
 
 function saveEmployeeObj(employeeObj){
-    let employeeArray = JSON.parse(localStorage.getItem("employeeData")) || [];
+    //para almacenar en el localStorage
+    // let employeeArray = JSON.parse(localStorage.getItem("employeeData")) || []; 
+    let employeeArray = [];
     employeeArray.push(employeeObj);
     console.log(employeeArray);
     //Convertir array de empleados a json
